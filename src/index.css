@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('https://cdn.jsdelivr.net/gh/sahibjotsaggu/SF-Pro-Fonts/SF-Pro-Display-Regular.otf')
+      format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: 'SF Pro Display', sans-serif;
+  } 
+
+
