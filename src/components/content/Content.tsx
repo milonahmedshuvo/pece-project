@@ -6,7 +6,7 @@ import Carousel from "../carousel/Carousel";
 const Content = () => {
   return (
    
-    <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row justify-between gap-4 ">
+    <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row justify-between gap-4 xl:gap-10 ">
 
 
 
@@ -69,7 +69,7 @@ const Content = () => {
 
       {/* news card  */}
 
-      <div className="border border-gray-300 rounded-xl w-full md:w-[400px] lg:w-full xl:w-[400px] p-3 space-y-2 pb-16 ">
+      <div className="border border-gray-300 rounded-xl w-full md:w-[400px] lg:w-full xl:w-[370px] p-3 space-y-2 pb-16 ">
         <div className="flex justify-between items-center mb-3">
           <p className="font-bold text-[15px] text-[#134074]">News</p>
           <FiArrowRightCircle className="text-[#0B2545] "></FiArrowRightCircle>
