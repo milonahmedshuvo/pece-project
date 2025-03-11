@@ -89,6 +89,8 @@ export default function Dashboard() {
                   {selectedCategory === category.name && (
                     <ul className="ml-6 mt-2 relative border-l-3 border-[#11345D] transition-all duration-300 ease-in-out ">
                       {category.children.map((child, index) => (
+
+                        <Link to={`/admin/${child}`} > 
                         <li
                           key={index}
                           className={`pl-6 py-2 flex items-center gap-2 mt-3 cursor-pointer relative  ${
@@ -109,6 +111,7 @@ export default function Dashboard() {
 
                           {child}
                         </li>
+                        </Link>
                       ))}
                     </ul>
                   )}
@@ -128,7 +131,7 @@ export default function Dashboard() {
               </button>
             )}
 
-            { !name && (
+            {/* { !name && (
               <>
                 <h2 className="text-[#134074] font-medium text-[24px] lg:text-[30px] pl-2 ">
                   Dashboard
@@ -143,7 +146,11 @@ export default function Dashboard() {
                   </span>
                 </div>
               </>
-            )}
+            )} */}
+
+
+
+
           </div>
 
 

@@ -1,7 +1,11 @@
 import { FiArrowRightCircle } from "react-icons/fi";
 import ClassCard from "../reuseable/ClassCard";
 
+
+
 const Categoris = () => {
+
+    
   return (
     <div className="mt-[-12px]">
       <h2 className="text-2xl font-normal text-[#134074] mb-3.5 ">Class</h2>
