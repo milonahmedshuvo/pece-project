@@ -1,6 +1,9 @@
 import { FiArrowRightCircle } from "react-icons/fi";
 import { GrScorecard } from "react-icons/gr";
 import HomeworkCard from "./HomeworkCard";
+import HomeworkTableComponent from "./HomeworkTable";
+import { Input } from "antd";
+import { GoSearch } from "react-icons/go";
 
 const Homework = () => {
   return (
@@ -49,6 +52,25 @@ const Homework = () => {
               subject="Economics"
               timing="8:00 AM - 9:00 AM"
             ></HomeworkCard>
+          </div>
+
+          <div className="flex justify-between mt-16 mb-1.5 gap-60">
+
+            <p className="text-[#134074] text-[20px] font-semibold w-1/2">
+              Individual Homework
+            </p>
+
+
+            <Input
+              size="large"
+              placeholder="Search for student"
+              prefix={<GoSearch />}
+              className="border border-gray-300  focus:ring-0 !shadow-none focus:!shadow-none py-10"
+            />
+          </div>
+
+          <div>
+            <HomeworkTableComponent />
           </div>
         </div>
 
