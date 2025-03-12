@@ -155,7 +155,7 @@ export default function Carousel() {
           <FiArrowRightCircle className="text-xl text-gray-500"></FiArrowRightCircle>
         </button>
       )}
-      <style jsx>{`
+      <style >{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
         }

@@ -126,7 +126,7 @@ const Homework = () => {
             </p>
             <button className="bg-[#134074] text-[#FFFFFF] py-3 px-1 text-center w-full drop-shadow-sm rounded-xl font-normal text-[14px] border border-gray-100 flex justify-center items-center gap-2">
               {" "}
-              <GrScorecard /> <span>Update Class Timetable</span>{" "}
+              <GrScorecard /> <span>Add Homework</span>{" "}
             </button>
           </div>
         </div>

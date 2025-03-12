@@ -4,6 +4,11 @@ import profile from "../../image/profile.png";
 const Navbar = () => {
   const [search, setSearch] = useState("");
 
+
+
+
+
+
   return (
     <nav className=" shadow-sm pr-7 flex items-center justify-between ">
       {/* Left side: Logo & Search */}
@@ -21,9 +26,13 @@ const Navbar = () => {
           placeholder="Search..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border border-gray-200 px-20 py-1 rounded-full w-48 md:w-64 lg:w-[546px] ml-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
+          className="hidden md:block border border-gray-200 px-20 py-1 rounded-full w-48 md:w-64 lg:w-[546px] ml-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
         />
       </div>
+
+
+
+
 
       {/* Right side: Profile */}
       <div className="flex items-center space-x-3">

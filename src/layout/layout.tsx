@@ -2,14 +2,12 @@ import { useState, useEffect } from "react";
 import { FiHome, FiMenu, FiBookOpen } from "react-icons/fi";
 import { GiTeacher } from "react-icons/gi";
 import { PiStudent } from "react-icons/pi";
-
-// import { TbBrandFeedly } from "react-icons/tb";
-// import { SlCalender } from "react-icons/sl";
-// import { LuNewspaper } from "react-icons/lu";
-// import { IoMdNotifications } from "react-icons/io";
-
 import { Link, Outlet, useParams } from "react-router";
 import Navbar from "./Navbar/Navbar";
+
+
+
+
 
 export default function Dashboard() {
   const { name } = useParams();
@@ -48,6 +46,14 @@ export default function Dashboard() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+
+
+
+
+
+
+
   return (
     <div>
       <Navbar />
@@ -59,6 +65,9 @@ export default function Dashboard() {
             isOpen || isLargeScreen ? "translate-x-0" : "-translate-x-72"
           } md:relative`}
         >
+
+
+
           <div className="flex gap-2 p-2">
             <FiHome className="w-[24px] h-[24px] text-[#11345D]" />
             <h2 className="text-xl font-semibold">Dashboard</h2>
@@ -119,16 +128,38 @@ export default function Dashboard() {
               ))}
             </ul>
           </nav>
+
+
+
+
+
         </div>
+
+
+
+
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col transition-all">
+
           {/* Navbar */}
           <div className="p-4 flex items-center justify-between">
             {!isLargeScreen && (
-              <button onClick={() => setIsOpen(!isOpen)}>
-                <FiMenu className="text-2xl" />
+              <div className="flex justify-between  w-full">
+
+             <button onClick={() => setIsOpen(!isOpen)}>
+                <FiMenu className="text-2xl" /> 
               </button>
+
+              {
+                isOpen &&  <button onClick={() => setIsOpen(!isOpen)}>
+                <FiMenu className="text-2xl" /> 
+              </button>
+              }
+
+              </div>
+
+              
             )}
 
             {/* { !name && (
