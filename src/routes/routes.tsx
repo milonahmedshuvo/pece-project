@@ -5,6 +5,7 @@ import Categoris from "../components/dashboard/dinamicPage/Categoris";
 import NotFoundPage from "../layout/NotFound";
 import Attendance from "../components/dashboard/admin/Class/Attendance/Attendance";
 import TimeTable from "../components/dashboard/admin/Class/TimeTable/TimeTable";
+import Homework from "../components/dashboard/admin/Class/Homework/Homework";
 
 
 export const routes = createBrowserRouter([
@@ -28,6 +29,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/admin/Timetable',
                 element: <TimeTable/>
+            },
+            {
+                path: '/admin/Homework',
+                element: <Homework/>
             }
         ]
     }

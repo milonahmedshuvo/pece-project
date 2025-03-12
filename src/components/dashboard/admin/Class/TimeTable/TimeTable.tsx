@@ -73,16 +73,17 @@ const TimeTable = () => {
 
 
         {/* news card  */}
-        <div className="border border-gray-300 rounded-xl w-full  md:w-full xl:w-[370px] p-3 space-y-2 pb-16 min-h-screen relative">
+        <div className="border border-gray-300 rounded-xl w-full  md:w-full xl:w-[370px] p-3 space-y-2  flex flex-col justify-between gap-20">
+
+
+
+          <div> 
+
           <div className="flex justify-between items-center mb-3">
             <p className="font-bold text-[15px] text-[#134074]">News</p>
             <FiArrowRightCircle className="text-[#0B2545] "></FiArrowRightCircle>
           </div>
 
-          
-
-
-          <div className="" >
            {/* manu list container  */}
           <div className="w-full lg:w-[68%]">
            
@@ -115,21 +116,24 @@ const TimeTable = () => {
               </div>
             </div>
             </div>
+          </div>          
           </div>
 
 
-          {/* button container  */}
-          <div className="absolute bottom-[100px] w-[93%] space-y-4 ">      
-                 <button className="text-[#0F773E] bg-[#FFFFFF] py-3 px-3.5 text-center w-full drop-shadow-sm rounded-xl font-normal text-[16px] border border-gray-100 flex justify-center items-center gap-2"> <GrScorecard/>  <span>Update Class Timetable</span> </button>
 
-                 <button className="text-[#134074] bg-[#FFFFFF] py-3 px-3.5 text-center w-full drop-shadow-sm rounded-xl font-normal text-[16px] border border-gray-100 flex justify-center items-center gap-2"> <GrScorecard/>  <span>Update Class Timetable</span> </button>
+
+
+
+           {/* button container  */}
+           <div className=" space-y-2 ">      
+                 <button className="text-[#0F773E] bg-[#FFFFFF] py-3 px-2.5 text-center w-full drop-shadow-sm rounded-xl font-normal text-[15px] border border-gray-100 flex justify-center items-center gap-2"> <GrScorecard/>  <span>Update Class Timetable</span> </button>
+
+                 <button className="text-[#134074] bg-[#FFFFFF] py-3 px-2.5 text-center w-full drop-shadow-sm rounded-xl font-normal text-[15px] border border-gray-100 flex justify-center items-center gap-2"> <GrScorecard/>  <span>Update Class Timetable</span> </button>
 
                  <p className="text-[#134074] font-normal text-[14px] ml-1.5" >Effortlessly import data, including tasks and timetables, via Excel or PDF file for seamless organization.</p>
             </div>
-          </div>
 
-
-
+         
         </div>
       </div>
     </div>

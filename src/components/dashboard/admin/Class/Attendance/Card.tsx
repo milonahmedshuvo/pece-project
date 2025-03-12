@@ -11,6 +11,10 @@ const AttendanceCard = ({
   color,
   bgColor,
 }: AttendanceCardProps) => {
+
+
+
+  
   return (
     <div
       className="w-full xl:w-[150] h-[148px] rounded-lg shadow-xs md:shadow px-5 pt-6 pb-5"

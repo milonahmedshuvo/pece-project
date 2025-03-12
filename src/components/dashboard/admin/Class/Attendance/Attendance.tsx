@@ -15,6 +15,8 @@ const Attendance = () => {
       <div className="flex flex-col  lg:flex-col xl:flex-row justify-between gap-4 xl:gap-10  ">
         <div className="w-full  md:w-full xl:w-3/5">
           {/* flex flex-col lg:flex-row gap-3 lg:gap-4 */}
+
+
           <div className="grid grid-cols-2 lg:grid-cols-3  xl:grid-cols-[150px_150px_150px_150px] gap-2 ">
             <AttendanceCard
               title="Students"
@@ -41,6 +43,7 @@ const Attendance = () => {
               bgColor="#0086A4"
             />
           </div>
+
 
           {/* table  */}
           <div className="mt-10">

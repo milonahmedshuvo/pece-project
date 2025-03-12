@@ -20,24 +20,28 @@ const columns: TableProps<DataType>['columns'] = [
     dataIndex: 'studentName',
     key: 'studentName',
     render: (text) => <span className="text-[#0B2545] !font-[600] text-[15px]">{text}</span>,
+    responsive: ['xs', 'sm', 'md', 'lg'],
   },
   {
     title: <span className='!font-[400] !text-[#0B2545] text-[15px]'>Student ID</span>,
     dataIndex: 'studentId',
     key: 'studentId',
     render: (text) => <span className="text-[#0B2545] !font-[600] text-[15px]">{text}</span>,
+    responsive: ['sm', 'md', ],
   },
   {
     title: <span className='!font-[400] !text-[#0B2545] text-[15px]'>Enrolled On</span>,
     dataIndex: 'enrolledOn',
     key: 'enrolledOn',
     render: (text) => <span className="text-[#0B2545] !font-[600] text-[15px]">{text}</span>,
+    responsive: ['sm', 'md', 'lg'],
   },
   {
     title: <span className='!font-[400] !text-[#0B2545] text-[15px]'>Contact</span>,
     dataIndex: 'contact',
     key: 'contact',
     render: (text) => <span className="text-[#0B2545] !font-[600] text-[15px]">{text}</span>,
+    responsive: ['lg'],
   },
   {
     title: <span className='!font-[400] !text-[#0B2545] text-[15px]'>Attendance</span>,
@@ -49,6 +53,7 @@ const columns: TableProps<DataType>['columns'] = [
         <button className="text-[13px]  text-[#F06D00] border-2 border-[#F06D00] rounded-md px-4 py-0.5 ">Absent</button>
       </Space>
     ),
+    responsive: ['xl']
   },
   {
     title:<span className='!font-[400] !text-[#0B2545] text-[15px]'>Leave Application</span>,

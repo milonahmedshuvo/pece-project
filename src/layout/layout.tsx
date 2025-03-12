@@ -52,7 +52,7 @@ export default function Dashboard() {
     <div>
       <Navbar />
 
-      <div className="flex h-screen ">
+      <div className="flex ">
         {/* Sidebar */}
         <div
           className={`bg-[#FFFFFF] text-[#11345D] w-72 py-5 pl-8 space-y-6 fixed h-full transition-transform duration-300 z-10 ${
