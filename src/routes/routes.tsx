@@ -2,8 +2,9 @@ import { createBrowserRouter } from "react-router";
 import Layout from "../layout/layout";
 import Content from "../components/content/Content";
 import Categoris from "../components/dashboard/dinamicPage/Categoris";
-import Attendance from "../components/dashboard/admin/attendance/Attendance";
 import NotFoundPage from "../layout/NotFound";
+import Attendance from "../components/dashboard/admin/Class/Attendance/Attendance";
+import TimeTable from "../components/dashboard/admin/Class/TimeTable/TimeTable";
 
 
 export const routes = createBrowserRouter([
@@ -23,6 +24,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/admin/Attendance',
                 element : <Attendance/>
+            },
+            {
+                path: '/admin/Timetable',
+                element: <TimeTable/>
             }
         ]
     }

@@ -1,6 +1,7 @@
 import { FiArrowRightCircle } from "react-icons/fi";
 import AttendanceCard from "./Card";
-import TableComponent from "./table";
+import TableComponent from "./Table";
+
 
 const Attendance = () => {
   return (
@@ -84,6 +85,8 @@ const Attendance = () => {
               </div>
             </div>
           </div>
+
+          
         </div>
       </div>
     </div>
