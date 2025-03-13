@@ -6,6 +6,8 @@ import NotFoundPage from "../layout/NotFound";
 import Attendance from "../components/dashboard/admin/Class/Attendance/Attendance";
 import TimeTable from "../components/dashboard/admin/Class/TimeTable/TimeTable";
 import Homework from "../components/dashboard/admin/Class/Homework/Homework";
+import Adminprofile from "../components/dashboard/admin/Profile/Adminprofile/Adminprofile";
+
 
 
 export const routes = createBrowserRouter([
@@ -33,6 +35,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/admin/Homework',
                 element: <Homework/>
+            },
+            {
+                path: '/admin/profile',
+                element: <Adminprofile/>
             }
         ]
     }

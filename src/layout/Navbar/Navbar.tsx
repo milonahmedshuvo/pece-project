@@ -1,9 +1,10 @@
 import { useState } from "react";
 import profile from "../../image/profile.png";
+import ProfileModal from "../../components/dashboard/admin/Profile/Profilemodal/Profilemodal";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
 
 
@@ -14,7 +15,7 @@ const Navbar = () => {
       {/* Left side: Logo & Search */}
       <div className="flex items-center space-x-4 lg:w-1/2  ">
         {/* Logo */}
-        <div className="relative w-72 bg-[#134074] py-6 overflow-hidden h-full">
+        <div className="relative w-52 sm:w-72 bg-[#134074] py-6 overflow-hidden h-full">
           <div className="text-2xl font-bold ml-7 text-white">MyLogo</div>
 
           <div className="absolute top-0 right-0 w-1/2 h-full bg-[#134074] blur-2xl"></div>
@@ -34,6 +35,18 @@ const Navbar = () => {
 
 
 
+
+   
+      
+
+   
+
+
+
+    <button 
+      onClick={() => setIsModalOpen(true)}
+      className=""
+    >   
       {/* Right side: Profile */}
       <div className="flex items-center space-x-3">
         <span className="font-semibold text-[#163760] hidden md:block">
@@ -45,6 +58,12 @@ const Navbar = () => {
           className="rounded-full w-12 h-12 border border-gray-300"
         />
       </div>
+      </button>
+
+
+      
+      <ProfileModal isOpen={isModalOpen} onClose={()=> setIsModalOpen(false)} ></ProfileModal>
+      
     </nav>
   );
 };

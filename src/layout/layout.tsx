@@ -143,19 +143,19 @@ export default function Dashboard() {
         <div className="flex-1 flex flex-col transition-all">
 
           {/* Navbar */}
-          <div className="p-4 flex items-center justify-between">
+          <div className="pl-4 pt-4 pb-4 flex items-center justify-between">
             {!isLargeScreen && (
-              <div className="flex justify-between  w-full">
+              <div className="flex justify-end mb-1.5 w-full">
 
              <button onClick={() => setIsOpen(!isOpen)}>
                 <FiMenu className="text-2xl" /> 
               </button>
 
-              {
+              {/*{
                 isOpen &&  <button onClick={() => setIsOpen(!isOpen)}>
-                <FiMenu className="text-2xl" /> 
+                <FiMenu className="text-2xl font-bold" /> 
               </button>
-              }
+              } */}
 
               </div>
 
