@@ -15,10 +15,10 @@ const Navbar = () => {
       {/* Left side: Logo & Search */}
       <div className="flex items-center space-x-4 lg:w-1/2  ">
         {/* Logo */}
-        <div className="relative w-52 sm:w-72 bg-[#134074] py-6 overflow-hidden h-full">
+        <div className="relative w-52 sm:w-72  py-6 overflow-hidden h-full bg-gradient-to-r from-[#134074] to-white  ">
           <div className="text-2xl font-bold ml-7 text-white">MyLogo</div>
 
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-[#134074] blur-2xl"></div>
+          <div className="absolute top-0 right-0 w-1/2 h-full  blur-3xl"></div>
         </div>
 
         {/* Search Bar */}
@@ -38,8 +38,6 @@ const Navbar = () => {
 
    
       
-
-   
 
 
 
